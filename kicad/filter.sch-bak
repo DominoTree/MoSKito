@@ -1,0 +1,441 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:R R?
+U 1 1 5F3D854F
+P 1900 1900
+F 0 "R?" V 1695 1900 50  0000 C CNN
+F 1 "R" V 1786 1900 50  0000 C CNN
+F 2 "" H 1900 1900 50  0001 C CNN
+F 3 "~" H 1900 1900 50  0001 C CNN
+	1    1900 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:C C?
+U 1 1 5F3D8B6F
+P 2600 1900
+F 0 "C?" V 2285 1900 50  0000 C CNN
+F 1 "C" V 2376 1900 50  0000 C CNN
+F 2 "" H 2600 1900 50  0001 C CNN
+F 3 "~" H 2600 1900 50  0001 C CNN
+	1    2600 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:R R?
+U 1 1 5F3D952A
+P 3150 1550
+F 0 "R?" H 3218 1596 50  0000 L CNN
+F 1 "R" H 3218 1505 50  0000 L CNN
+F 2 "" H 3150 1550 50  0001 C CNN
+F 3 "~" H 3150 1550 50  0001 C CNN
+	1    3150 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:R R?
+U 1 1 5F3DA086
+P 3150 3500
+F 0 "R?" H 3218 3546 50  0000 L CNN
+F 1 "R" H 3218 3455 50  0000 L CNN
+F 2 "" H 3150 3500 50  0001 C CNN
+F 3 "~" H 3150 3500 50  0001 C CNN
+	1    3150 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:R R?
+U 1 1 5F3DA8BA
+P 3700 2300
+F 0 "R?" V 3905 2300 50  0000 C CNN
+F 1 "R" V 3814 2300 50  0000 C CNN
+F 2 "" H 3700 2300 50  0001 C CNN
+F 3 "~" H 3700 2300 50  0001 C CNN
+	1    3700 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:R R?
+U 1 1 5F3DBC72
+P 3700 3050
+F 0 "R?" V 3495 3050 50  0000 C CNN
+F 1 "R" V 3586 3050 50  0000 C CNN
+F 2 "" H 3700 3050 50  0001 C CNN
+F 3 "~" H 3700 3050 50  0001 C CNN
+	1    3700 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 1900 2350 1900
+Wire Wire Line
+	2850 1900 3150 1900
+Wire Wire Line
+	3150 1900 3150 1800
+Wire Wire Line
+	3150 1900 3150 2300
+Connection ~ 3150 1900
+Wire Wire Line
+	3450 2300 3150 2300
+Connection ~ 3150 2300
+Wire Wire Line
+	3150 2300 3150 3050
+Wire Wire Line
+	3450 3050 3150 3050
+Connection ~ 3150 3050
+Wire Wire Line
+	3150 3050 3150 3250
+$Comp
+L pspice:QNPN Q?
+U 1 1 5F3DC6BE
+P 4650 2300
+F 0 "Q?" H 4877 2346 50  0000 L CNN
+F 1 "QNPN" H 4877 2255 50  0000 L CNN
+F 2 "" H 4650 2300 50  0001 C CNN
+F 3 "~" H 4650 2300 50  0001 C CNN
+	1    4650 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:QNPN Q?
+U 1 1 5F3DCEA4
+P 5600 2300
+F 0 "Q?" H 5827 2346 50  0000 L CNN
+F 1 "QNPN" H 5827 2255 50  0000 L CNN
+F 2 "" H 5600 2300 50  0001 C CNN
+F 3 "~" H 5600 2300 50  0001 C CNN
+	1    5600 2300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2300 4350 2300
+$Comp
+L pspice:R R?
+U 1 1 5F3DF7C4
+P 4800 1550
+F 0 "R?" H 4868 1596 50  0000 L CNN
+F 1 "R" H 4868 1505 50  0000 L CNN
+F 2 "" H 4800 1550 50  0001 C CNN
+F 3 "~" H 4800 1550 50  0001 C CNN
+	1    4800 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 1900 4800 1900
+Wire Wire Line
+	4800 1900 4800 1950
+Wire Wire Line
+	5450 1950 5450 1200
+Wire Wire Line
+	3150 1200 1150 1200
+Connection ~ 3150 1200
+Wire Wire Line
+	3150 3800 1150 3800
+Text Label 1150 1200 0    50   ~ 0
+VD
+Text Label 1150 3800 0    50   ~ 0
+VL1
+Wire Wire Line
+	1650 1900 1150 1900
+Text Label 1150 1900 0    50   ~ 0
+OUTPUT
+Wire Wire Line
+	3150 1300 3150 1200
+Wire Wire Line
+	4800 1800 4800 1900
+Wire Wire Line
+	3150 1200 4800 1200
+Connection ~ 4800 1900
+Wire Wire Line
+	4800 1300 4800 1200
+Connection ~ 4800 1200
+Wire Wire Line
+	4800 1200 5450 1200
+Wire Wire Line
+	4800 2650 4800 2800
+Wire Wire Line
+	4800 2800 5450 2800
+Wire Wire Line
+	5450 2800 5450 2650
+$Comp
+L pspice:QNPN Q?
+U 1 1 5F570F0C
+P 6800 2250
+F 0 "Q?" H 7027 2296 50  0000 L CNN
+F 1 "QNPN" H 7027 2205 50  0000 L CNN
+F 2 "" H 6800 2250 50  0001 C CNN
+F 3 "~" H 6800 2250 50  0001 C CNN
+	1    6800 2250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L pspice:R R?
+U 1 1 5F573F0A
+P 6650 3050
+F 0 "R?" H 6718 3096 50  0000 L CNN
+F 1 "R" H 6718 3005 50  0000 L CNN
+F 2 "" H 6650 3050 50  0001 C CNN
+F 3 "~" H 6650 3050 50  0001 C CNN
+	1    6650 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 2600 6650 2800
+Wire Wire Line
+	6650 3300 6650 3800
+Wire Wire Line
+	6650 3800 3150 3800
+Connection ~ 3150 3800
+Connection ~ 5450 2800
+Wire Wire Line
+	5900 2300 6050 2300
+Wire Wire Line
+	5950 2800 5950 1900
+Wire Wire Line
+	5450 2800 5950 2800
+Wire Wire Line
+	5950 1900 6650 1900
+Wire Wire Line
+	6050 3050 6050 2300
+Wire Wire Line
+	3950 3050 6050 3050
+Connection ~ 6050 2300
+$Comp
+L pspice:C C?
+U 1 1 5F577B86
+P 6550 1600
+F 0 "C?" V 6235 1600 50  0000 C CNN
+F 1 "C" V 6326 1600 50  0000 C CNN
+F 2 "" H 6550 1600 50  0001 C CNN
+F 3 "~" H 6550 1600 50  0001 C CNN
+	1    6550 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:R R?
+U 1 1 5F57834C
+P 7300 1600
+F 0 "R?" V 7095 1600 50  0000 C CNN
+F 1 "R" V 7186 1600 50  0000 C CNN
+F 2 "" H 7300 1600 50  0001 C CNN
+F 3 "~" H 7300 1600 50  0001 C CNN
+	1    7300 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 1600 6300 1600
+Wire Wire Line
+	6050 1600 6050 2300
+Wire Wire Line
+	6800 1600 7050 1600
+$Comp
+L pspice:R R?
+U 1 1 5F579BBE
+P 7450 2550
+F 0 "R?" H 7518 2596 50  0000 L CNN
+F 1 "R" H 7518 2505 50  0000 L CNN
+F 2 "" H 7450 2550 50  0001 C CNN
+F 3 "~" H 7450 2550 50  0001 C CNN
+	1    7450 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5F57A580
+P 7450 3050
+F 0 "D?" V 7404 3178 50  0000 L CNN
+F 1 "DIODE" V 7495 3178 50  0000 L CNN
+F 2 "" H 7450 3050 50  0001 C CNN
+F 3 "~" H 7450 3050 50  0001 C CNN
+	1    7450 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5F57AD01
+P 7450 3500
+F 0 "D?" V 7404 3628 50  0000 L CNN
+F 1 "DIODE" V 7495 3628 50  0000 L CNN
+F 2 "" H 7450 3500 50  0001 C CNN
+F 3 "~" H 7450 3500 50  0001 C CNN
+	1    7450 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7450 2800 7450 2850
+Wire Wire Line
+	7450 3250 7450 3300
+Wire Wire Line
+	7450 3700 7450 3800
+Wire Wire Line
+	7450 3800 6650 3800
+Connection ~ 6650 3800
+Wire Wire Line
+	7100 2250 7450 2250
+Wire Wire Line
+	7450 2250 7450 2300
+Wire Wire Line
+	3150 3750 3150 3800
+$Comp
+L pspice:R R?
+U 1 1 5F57FF99
+P 8100 2550
+F 0 "R?" H 8168 2596 50  0000 L CNN
+F 1 "R" H 8168 2505 50  0000 L CNN
+F 2 "" H 8100 2550 50  0001 C CNN
+F 3 "~" H 8100 2550 50  0001 C CNN
+	1    8100 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 2250 8100 2250
+Wire Wire Line
+	8100 2250 8100 2300
+Connection ~ 7450 2250
+$Comp
+L pspice:C C?
+U 1 1 5F582057
+P 8100 3450
+F 0 "C?" H 8278 3496 50  0000 L CNN
+F 1 "C" H 8278 3405 50  0000 L CNN
+F 2 "" H 8100 3450 50  0001 C CNN
+F 3 "~" H 8100 3450 50  0001 C CNN
+	1    8100 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 3200 8100 3100
+Wire Wire Line
+	8100 3700 8100 3800
+Wire Wire Line
+	8100 3800 7450 3800
+Connection ~ 7450 3800
+$Comp
+L pspice:C C?
+U 1 1 5F584147
+P 9150 1600
+F 0 "C?" V 9465 1600 50  0000 C CNN
+F 1 "C" V 9374 1600 50  0000 C CNN
+F 2 "" H 9150 1600 50  0001 C CNN
+F 3 "~" H 9150 1600 50  0001 C CNN
+	1    9150 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:R R?
+U 1 1 5F584858
+P 8900 2550
+F 0 "R?" H 8968 2596 50  0000 L CNN
+F 1 "R" H 8968 2505 50  0000 L CNN
+F 2 "" H 8900 2550 50  0001 C CNN
+F 3 "~" H 8900 2550 50  0001 C CNN
+	1    8900 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:R R?
+U 1 1 5F585405
+P 9400 2550
+F 0 "R?" H 9468 2596 50  0000 L CNN
+F 1 "R" H 9468 2505 50  0000 L CNN
+F 2 "" H 9400 2550 50  0001 C CNN
+F 3 "~" H 9400 2550 50  0001 C CNN
+	1    9400 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:R R?
+U 1 1 5F5858AB
+P 8350 2900
+F 0 "R?" V 8145 2900 50  0000 C CNN
+F 1 "R" V 8236 2900 50  0000 C CNN
+F 2 "" H 8350 2900 50  0001 C CNN
+F 3 "~" H 8350 2900 50  0001 C CNN
+	1    8350 2900
+	0    1    1    0   
+$EndComp
+Connection ~ 8100 2900
+Wire Wire Line
+	8100 2900 8100 2800
+$Comp
+L pspice:DIODE D?
+U 1 1 5F5861DE
+P 8350 3100
+F 0 "D?" H 8350 2835 50  0000 C CNN
+F 1 "DIODE" H 8350 2926 50  0000 C CNN
+F 2 "" H 8350 3100 50  0001 C CNN
+F 3 "~" H 8350 3100 50  0001 C CNN
+	1    8350 3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8150 3100 8100 3100
+Connection ~ 8100 3100
+Wire Wire Line
+	8100 3100 8100 2900
+Wire Wire Line
+	8550 3100 8600 3100
+Wire Wire Line
+	8600 3100 8600 2900
+Wire Wire Line
+	7550 1600 8900 1600
+Wire Wire Line
+	8900 1600 8900 2300
+Connection ~ 8900 1600
+Wire Wire Line
+	9400 1600 9400 2300
+Connection ~ 8100 3800
+$Comp
+L pspice:R R?
+U 1 1 5F58BA69
+P 8600 2550
+F 0 "R?" H 8533 2596 50  0000 R CNN
+F 1 "R" H 8533 2505 50  0000 R CNN
+F 2 "" H 8600 2550 50  0001 C CNN
+F 3 "~" H 8600 2550 50  0001 C CNN
+	1    8600 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 2900 8600 2800
+Connection ~ 8600 2900
+Wire Wire Line
+	8600 2300 8600 1200
+Wire Wire Line
+	8600 1200 5450 1200
+Connection ~ 5450 1200
+Wire Wire Line
+	9400 1600 10350 1600
+Connection ~ 9400 1600
+Wire Wire Line
+	8600 3100 10350 3100
+Connection ~ 8600 3100
+Text Label 10350 1600 2    50   ~ 0
+PS
+Text Label 10350 3100 2    50   ~ 0
+ES
+Wire Wire Line
+	8100 3800 8900 3800
+Wire Wire Line
+	8900 2800 8900 3800
+Connection ~ 8900 3800
+Wire Wire Line
+	9400 3800 9400 2800
+Wire Wire Line
+	8900 3800 9400 3800
+Text Notes 8150 3350 0    50   ~ 0
++
+$EndSCHEMATC
