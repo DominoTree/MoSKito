@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -24,5 +24,11 @@ S 2350 700  2300 1550
 U 5F3D82C3
 F0 "Env/Pitch" 50
 F1 "env.sch" 50
+$EndSheet
+$Sheet
+S 4700 700  2450 1550
+U 5F82B739
+F0 "CPU / RAM" 50
+F1 "digital.sch" 50
 $EndSheet
 $EndSCHEMATC
