@@ -200,19 +200,19 @@ Wire Wire Line
 Wire Wire Line
 	2800 1650 2250 1650
 $Sheet
-S 5850 2650 1050 750 
+S 5600 2850 1050 750 
 U 5FB1A3B4
 F0 "Mic / Line In" 50
 F1 "audioin.sch" 50
 $EndSheet
 $Sheet
-S 700  2000 1550 600 
+S 750  2350 1550 600 
 U 5FB1A45E
 F0 "Buttons" 50
 F1 "buttons.sch" 50
 $EndSheet
 $Sheet
-S 7100 2650 1050 850 
+S 7050 2900 1050 850 
 U 5FB1B134
 F0 "Audio Amp" 50
 F1 "amp.sch" 50

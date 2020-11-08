@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 7
 Title ""
 Date ""
 Rev ""
@@ -27,12 +27,12 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x12 J1
 U 1 1 5F3F6184
-P 5250 2300
-F 0 "J1" V 5467 2246 50  0000 C CNN
-F 1 "Conn_01x12" V 5376 2246 50  0000 C CNN
-F 2 "" H 5250 2300 50  0001 C CNN
-F 3 "~" H 5250 2300 50  0001 C CNN
-	1    5250 2300
+P 5250 1850
+F 0 "J1" V 5467 1796 50  0000 C CNN
+F 1 "Conn_01x12" V 5376 1796 50  0000 C CNN
+F 2 "" H 5250 1850 50  0001 C CNN
+F 3 "~" H 5250 1850 50  0001 C CNN
+	1    5250 1850
 	0    -1   -1   0   
 $EndComp
 Text Label 5550 2500 3    50   ~ 0
@@ -60,21 +60,21 @@ KO7
 Text Label 4750 2500 3    50   ~ 0
 KO8
 Wire Wire Line
-	5450 2500 5450 2750
+	5450 2050 5450 2750
 Wire Wire Line
-	5350 2500 5350 2750
+	5350 2050 5350 2750
 Wire Wire Line
-	5250 2500 5250 2750
+	5250 2050 5250 2750
 Wire Wire Line
-	5150 2500 5150 2750
+	5150 2050 5150 2750
 Wire Wire Line
-	5050 2500 5050 2750
+	5050 2050 5050 2750
 Wire Wire Line
-	4950 2500 4950 2750
+	4950 2050 4950 2750
 Wire Wire Line
-	4850 2500 4850 2750
+	4850 2050 4850 2750
 Wire Wire Line
-	4750 2500 4750 2750
+	4750 2050 4750 2750
 Entry Wire Line
 	4750 2750 4650 2850
 Entry Wire Line
@@ -1107,21 +1107,21 @@ Wire Wire Line
 Entry Wire Line
 	5450 2750 5350 2850
 Wire Wire Line
-	5850 2500 5850 3200
+	5850 2050 5850 3200
 Wire Wire Line
-	5750 2500 5750 3050
+	5750 2050 5750 3050
 Wire Wire Line
 	5750 3050 5700 3050
 Wire Wire Line
 	5700 3050 5700 3350
 Wire Wire Line
-	5650 2500 5650 3000
+	5650 2050 5650 3000
 Wire Wire Line
 	5650 3000 5550 3000
 Wire Wire Line
 	5550 3000 5550 3500
 Wire Wire Line
-	5550 2500 5550 2950
+	5550 2050 5550 2950
 Wire Wire Line
 	5550 2950 5400 2950
 Wire Wire Line
@@ -1276,6 +1276,30 @@ Wire Wire Line
 Connection ~ 7800 6150
 Wire Wire Line
 	7800 6150 7950 6150
+Text HLabel 5450 2400 1    50   Input ~ 0
+KO1
+Text HLabel 5350 2400 1    50   Input ~ 0
+KO2
+Text HLabel 5250 2400 1    50   Input ~ 0
+KO3
+Text HLabel 5150 2400 1    50   Input ~ 0
+KO4
+Text HLabel 5050 2400 1    50   Input ~ 0
+KO5
+Text HLabel 4950 2400 1    50   Input ~ 0
+KO6
+Text HLabel 4850 2400 1    50   Input ~ 0
+KO7
+Text HLabel 4750 2400 1    50   Input ~ 0
+KO8
+Text HLabel 5550 2200 3    50   Output ~ 0
+KI5
+Text HLabel 5650 2200 3    50   Output ~ 0
+KI6
+Text HLabel 5750 2200 3    50   Output ~ 0
+KI7
+Text HLabel 5850 2200 3    50   Output ~ 0
+KI8
 Wire Bus Line
 	2650 2850 5350 2850
 $EndSCHEMATC
