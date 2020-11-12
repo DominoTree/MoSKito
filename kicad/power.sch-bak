@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 11
+Sheet 10 11
 Title ""
 Date ""
 Rev ""
@@ -58,17 +58,6 @@ F 2 "" H 9350 2500 50  0001 C CNN
 F 3 "~" H 9150 2400 50  0001 C CNN
 	1    9150 2400
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D45
-U 1 1 5FAA5D5C
-P 9250 2950
-F 0 "D45" V 9296 2870 50  0000 R CNN
-F 1 "LN2G" V 9205 2870 50  0000 R CNN
-F 2 "" H 9250 2950 50  0001 C CNN
-F 3 "~" H 9250 2950 50  0001 C CNN
-	1    9250 2950
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	9250 3150 9850 3150
@@ -725,26 +714,13 @@ Wire Wire Line
 Connection ~ 10200 1750
 Wire Wire Line
 	10200 1750 10200 600 
-$Comp
-L Connector:Jack-DC J2
-U 1 1 5FC229FA
-P 10950 1350
-F 0 "J2" H 11100 1550 50  0000 R CNN
-F 1 "Jack-DC" H 11100 1650 50  0000 R CNN
-F 2 "" H 11000 1310 50  0001 C CNN
-F 3 "~" H 11000 1310 50  0001 C CNN
-	1    10950 1350
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	10650 1250 10650 1100
-Wire Wire Line
-	10650 1100 10350 1100
 Connection ~ 10350 1100
 Wire Wire Line
 	10650 1450 10650 1750
 Wire Wire Line
-	10650 1750 10350 1750
+	10650 1750 10600 1750
 Connection ~ 10350 1750
 Text Notes 6100 3850 0    50   ~ 0
 9.5V
@@ -764,4 +740,50 @@ Text Notes 7750 2400 0    50   ~ 0
 0.0V
 Text Notes 5550 2300 0    50   ~ 0
 0.7V
+$Comp
+L Device:LED D?
+U 1 1 5FAE8FBA
+P 9250 2950
+F 0 "D?" V 9289 2832 50  0000 R CNN
+F 1 "LN2G" V 9198 2832 50  0000 R CNN
+F 2 "" H 9250 2950 50  0001 C CNN
+F 3 "~" H 9250 2950 50  0001 C CNN
+	1    9250 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Barrel_Jack_Switch J?
+U 1 1 5FAEB180
+P 10950 1350
+F 0 "J?" H 10720 1300 50  0000 R CNN
+F 1 "Barrel_Jack_Switch" H 10720 1391 50  0000 R CNN
+F 2 "" H 11000 1310 50  0001 C CNN
+F 3 "~" H 11000 1310 50  0001 C CNN
+	1    10950 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Battery BT?
+U 1 1 5FAEC2E4
+P 10600 800
+F 0 "BT?" H 10708 846 50  0000 L CNN
+F 1 "Battery" H 10708 755 50  0000 L CNN
+F 2 "" V 10600 860 50  0001 C CNN
+F 3 "~" V 10600 860 50  0001 C CNN
+	1    10600 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 1350 10500 1350
+Wire Wire Line
+	10350 1100 10650 1100
+Wire Wire Line
+	10600 600  10500 600 
+Wire Wire Line
+	10500 600  10500 1350
+Wire Wire Line
+	10600 1000 10600 1750
+Connection ~ 10600 1750
+Wire Wire Line
+	10600 1750 10350 1750
 $EndSCHEMATC
