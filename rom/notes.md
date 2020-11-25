@@ -1,3 +1,7 @@
+*Startup*
+The MCU running the show appears to have an internal mask ROM sharing the external address bus, but using a different internal data bus or using some method to disconnect the external lines
+
+
 *Sample offsets*
 - 0x0B00 256
 - 0x0C00 128
